@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Capstone_Sprint-2_Backend\\LXP.Api\\wwwroot\\Images\\Drop down D.png",
+      "PackagePath": "staticwebassets\\Images\\Drop down D.png"
+    },
+    {
+      "Id": "D:\\Capstone_Sprint-2_Backend\\LXP.Api\\wwwroot\\Images\\Dropdown list.png",
+      "PackagePath": "staticwebassets\\Images\\Dropdown list.png"
+    },
+    {
+      "Id": "D:\\Capstone_Sprint-2_Backend\\LXP.Api\\wwwroot\\Images\\Screenshot 2024-01-10 114250.png",
+      "PackagePath": "staticwebassets\\Images\\Screenshot 2024-01-10 114250.png"
+    },
+    {
+      "Id": "D:\\Capstone_Sprint-2_Backend\\LXP.Api\\wwwroot\\Images\\create s.png",
+      "PackagePath": "staticwebassets\\Images\\create s.png"
+    },
+    {
+      "Id": "D:\\Capstone_Sprint-2_Backend\\LXP.Api\\wwwroot\\Images\\create.png",
+      "PackagePath": "staticwebassets\\Images\\create.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LXP.Api.props",
+      "PackagePath": "build\\LXP.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LXP.Api.props",
+      "PackagePath": "buildMultiTargeting\\LXP.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LXP.Api.props",
+      "PackagePath": "buildTransitive\\LXP.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

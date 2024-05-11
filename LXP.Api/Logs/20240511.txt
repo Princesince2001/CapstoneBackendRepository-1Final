@@ -1,0 +1,1164 @@
+2024-05-11 10:43:44.179 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 10:43:44.220 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 10:43:44.222 +05:30 [INF] Hosting environment: Development
+2024-05-11 10:43:44.223 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 10:43:47.768 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 10:43:48.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 669.9566ms
+2024-05-11 10:43:48.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 10:43:48.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 10:43:48.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.901ms
+2024-05-11 10:43:48.521 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.7564ms
+2024-05-11 10:43:48.586 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 10:43:48.769 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 182.5274ms
+2024-05-11 11:16:48.860 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/464e46d7-a11e-4ee0-b88d-caa62beadd21?oldPassword=Arun&newPassword=Arun%20Srini - null 0
+2024-05-11 11:16:48.891 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 11:16:48.895 +05:30 [INF] CORS policy execution successful.
+2024-05-11 11:16:48.897 +05:30 [INF] CORS policy execution successful.
+2024-05-11 11:16:48.902 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 11:16:48.928 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 11:16:49.392 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 456.681ms
+2024-05-11 11:16:49.396 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 11:16:49.398 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/464e46d7-a11e-4ee0-b88d-caa62beadd21 responded 500 in 508.9700 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 11:16:49.439 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 11:16:49.451 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/464e46d7-a11e-4ee0-b88d-caa62beadd21?oldPassword=Arun&newPassword=Arun%20Srini - 500 null text/plain; charset=utf-8 591.8651ms
+2024-05-11 11:17:08.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 11:17:08.161 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 56.3696ms
+2024-05-11 11:17:08.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 11:17:08.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 11:17:08.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 4.3917ms
+2024-05-11 11:17:08.215 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 32.7854ms
+2024-05-11 11:17:08.382 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 11:17:08.399 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.3085ms
+2024-05-11 12:28:45.141 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:28:45.193 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:28:45.197 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:28:45.197 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:28:49.073 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:28:49.825 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 764.4588ms
+2024-05-11 12:28:49.835 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:28:49.835 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:28:49.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 15.2546ms
+2024-05-11 12:28:49.893 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.4014ms
+2024-05-11 12:28:50.120 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:28:50.293 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 172.6446ms
+2024-05-11 12:29:40.535 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 254
+2024-05-11 12:29:40.553 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:29:40.555 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:29:40.557 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:29:40.562 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:29:40.589 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:29:40.904 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 306.9904ms
+2024-05-11 12:29:40.907 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:29:40.910 +05:30 [ERR] HTTP POST /lxp/learner/registration responded 500 in 358.2967 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:29:40.959 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:29:40.973 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 500 null text/plain; charset=utf-8 438.5159ms
+2024-05-11 12:34:10.284 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:34:10.338 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:34:10.342 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:34:10.343 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:34:11.454 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:34:12.187 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 743.0421ms
+2024-05-11 12:34:12.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:34:12.198 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:34:12.205 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.0744ms
+2024-05-11 12:34:12.256 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.8217ms
+2024-05-11 12:34:12.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:34:12.468 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.6012ms
+2024-05-11 12:36:29.329 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 258
+2024-05-11 12:36:29.357 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:36:29.358 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:36:29.360 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:36:29.365 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:36:29.393 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:36:29.725 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 325.2156ms
+2024-05-11 12:36:29.729 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:36:29.732 +05:30 [ERR] HTTP POST /lxp/learner/registration responded 500 in 376.8147 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:36:29.774 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:36:29.790 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 500 null text/plain; charset=utf-8 463.8949ms
+2024-05-11 12:37:12.171 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:37:12.212 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 41.6592ms
+2024-05-11 12:37:12.235 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:37:12.236 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:37:12.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.5332ms
+2024-05-11 12:37:12.263 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.8371ms
+2024-05-11 12:37:12.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:37:12.459 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.0709ms
+2024-05-11 12:38:39.707 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 255
+2024-05-11 12:38:39.718 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:38:39.720 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:38:39.722 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:38:39.726 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:38:39.735 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 5.3261ms
+2024-05-11 12:38:39.739 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:38:39.741 +05:30 [ERR] HTTP POST /lxp/learner/registration responded 500 in 23.4820 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:38:39.751 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:38:39.762 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 500 null text/plain; charset=utf-8 54.7634ms
+2024-05-11 12:39:57.420 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:39:57.475 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:39:57.478 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:39:57.479 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:39:58.568 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:39:59.689 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1128.9246ms
+2024-05-11 12:39:59.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:39:59.698 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:39:59.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.8385ms
+2024-05-11 12:39:59.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.6906ms
+2024-05-11 12:39:59.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:39:59.992 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.1504ms
+2024-05-11 12:40:52.965 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 254
+2024-05-11 12:40:52.990 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:40:52.992 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:40:52.994 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:40:52.998 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:40:53.022 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:40:53.340 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 310.3781ms
+2024-05-11 12:40:53.343 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:40:53.346 +05:30 [ERR] HTTP POST /lxp/learner/registration responded 500 in 357.6697 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:40:53.393 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:40:53.408 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 500 null text/plain; charset=utf-8 443.1843ms
+2024-05-11 12:42:27.149 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:42:27.203 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:42:27.206 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:42:27.207 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:42:28.160 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:42:28.842 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 690.6841ms
+2024-05-11 12:42:28.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:42:28.852 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:42:28.862 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.8272ms
+2024-05-11 12:42:28.903 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.4776ms
+2024-05-11 12:42:28.992 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:42:29.125 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.0533ms
+2024-05-11 12:43:09.671 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 256
+2024-05-11 12:43:09.688 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:43:09.690 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:43:09.691 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:43:09.695 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:43:09.717 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:43:12.738 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 3011.5595ms
+2024-05-11 12:43:12.743 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:43:12.747 +05:30 [ERR] HTTP POST /lxp/learner/registration responded 500 in 3060.1895 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Data too long for column 'new_password' at row 1
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in /_/src/MySqlConnector/MySqlCommand.cs:line 290
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at LXP.Data.Repository.ProfilePasswordHistoryRepository.AddPasswordHistory1(PasswordHistory passwordHistory) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\ProfilePasswordHistoryRepository.cs:line 28
+   at LXP.Core.Services.LearnerService.LearnerRegistration(RegisterUserViewModel registerUserViewModel) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\LearnerService.cs:line 99
+   at LXP.Api.Controllers.RegistrationController.Registration(RegisterUserViewModel learner) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:43:12.867 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Data too long for column 'new_password' at row 1
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in /_/src/MySqlConnector/MySqlCommand.cs:line 290
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at LXP.Data.Repository.ProfilePasswordHistoryRepository.AddPasswordHistory1(PasswordHistory passwordHistory) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\ProfilePasswordHistoryRepository.cs:line 28
+   at LXP.Core.Services.LearnerService.LearnerRegistration(RegisterUserViewModel registerUserViewModel) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\LearnerService.cs:line 99
+   at LXP.Api.Controllers.RegistrationController.Registration(RegisterUserViewModel learner) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 39
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:43:12.889 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 500 null text/plain; charset=utf-8 3218.8111ms
+2024-05-11 12:44:21.212 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:44:21.279 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 67.4504ms
+2024-05-11 12:44:21.306 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:44:21.307 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:44:21.318 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.9028ms
+2024-05-11 12:44:21.348 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.2452ms
+2024-05-11 12:44:21.446 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:44:21.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.891ms
+2024-05-11 12:46:06.665 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 246
+2024-05-11 12:46:06.679 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:46:06.680 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:46:06.682 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:46:06.683 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:46:06.796 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 12:46:06.809 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 123.4239ms
+2024-05-11 12:46:06.812 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:46:06.814 +05:30 [INF] HTTP POST /lxp/learner/registration responded 200 in 135.4813 ms
+2024-05-11 12:46:06.815 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 200 null application/json; charset=utf-8 151.3081ms
+2024-05-11 12:46:40.315 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 245
+2024-05-11 12:46:40.339 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:46:40.340 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:46:40.342 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:46:40.344 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:46:40.377 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 12:46:40.380 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 34.1463ms
+2024-05-11 12:46:40.382 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 12:46:40.385 +05:30 [INF] HTTP POST /lxp/learner/registration responded 200 in 46.4006 ms
+2024-05-11 12:46:40.388 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 200 null application/json; charset=utf-8 73.2674ms
+2024-05-11 12:48:24.754 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:48:24.808 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:48:24.811 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:48:24.812 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:48:27.031 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:48:27.779 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 754.9446ms
+2024-05-11 12:48:27.787 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:48:27.791 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:48:27.795 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.2721ms
+2024-05-11 12:48:27.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.3783ms
+2024-05-11 12:48:27.931 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:48:28.074 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.2749ms
+2024-05-11 12:49:09.188 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Arun%4012345 - null 0
+2024-05-11 12:49:09.216 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:49:09.218 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:49:09.221 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:49:09.225 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:49:09.252 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:49:09.508 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 249.1794ms
+2024-05-11 12:49:09.512 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:49:09.514 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365 responded 500 in 299.6470 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:49:09.552 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IPasswordHistoryService' while attempting to activate 'LXP.Api.Controllers.RegistrationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method11(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:49:09.564 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Arun%4012345 - 500 null text/plain; charset=utf-8 378.1661ms
+2024-05-11 12:52:07.559 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:52:07.655 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:52:07.659 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:52:07.660 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:52:11.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:52:12.997 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1079.9753ms
+2024-05-11 12:52:13.005 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:52:13.006 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:52:13.014 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.5226ms
+2024-05-11 12:52:13.056 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.528ms
+2024-05-11 12:52:13.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:52:13.270 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 134.3699ms
+2024-05-11 12:52:34.393 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Arun%4012345 - null 0
+2024-05-11 12:52:34.412 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:52:34.414 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:52:34.418 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:52:34.423 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:52:34.449 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:52:36.501 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 2043.1285ms
+2024-05-11 12:52:36.505 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:52:36.508 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365 responded 500 in 2097.9514 ms
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 25
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:52:36.558 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 25
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:52:36.575 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Arun%4012345 - 500 null text/plain; charset=utf-8 2186.8403ms
+2024-05-11 12:54:18.821 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:54:18.907 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:54:18.909 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:54:18.910 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:54:20.081 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:54:21.271 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1199.3322ms
+2024-05-11 12:54:21.291 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:54:21.293 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:54:21.338 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 43.1239ms
+2024-05-11 12:54:21.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.0242ms
+2024-05-11 12:54:21.478 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:54:21.607 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.8722ms
+2024-05-11 12:54:58.450 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Arun%4012345 - null 0
+2024-05-11 12:54:58.463 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:54:58.465 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:54:58.467 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:54:58.470 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:54:58.487 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:54:59.645 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 1154.8591ms
+2024-05-11 12:54:59.647 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:54:59.650 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365 responded 500 in 1187.6995 ms
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 25
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:54:59.683 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 25
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:54:59.693 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Arun%4012345 - 500 null text/plain; charset=utf-8 1243.1849ms
+2024-05-11 12:57:53.106 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 12:57:53.138 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 12:57:53.139 +05:30 [INF] Hosting environment: Development
+2024-05-11 12:57:53.140 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 12:57:56.650 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 12:57:57.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 449.4395ms
+2024-05-11 12:57:57.102 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 12:57:57.102 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 12:57:57.111 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.5897ms
+2024-05-11 12:57:57.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.2434ms
+2024-05-11 12:57:57.200 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 12:57:57.301 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.3276ms
+2024-05-11 12:58:22.745 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Sneha%4012345 - null 0
+2024-05-11 12:58:22.758 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 12:58:22.759 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:58:22.761 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:58:22.763 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:58:22.782 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:58:23.972 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 1184.4851ms
+2024-05-11 12:58:23.975 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:58:23.977 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365 responded 500 in 1220.4380 ms
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:58:24.013 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:58:24.026 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Sneha%4012345 - 500 null text/plain; charset=utf-8 1281.8717ms
+2024-05-11 12:59:13.015 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Sneha%4012345 - null 0
+2024-05-11 12:59:13.021 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:59:13.022 +05:30 [INF] CORS policy execution successful.
+2024-05-11 12:59:13.023 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:59:13.024 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 12:59:13.111 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 85.2528ms
+2024-05-11 12:59:13.112 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 12:59:13.113 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365 responded 500 in 92.3148 ms
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 12:59:13.121 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The provider for the source IQueryable doesn't implement IDbAsyncQueryProvider. Only providers that implement IDbAsyncQueryProvider can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at System.Data.Entity.QueryableExtensions.FirstOrDefaultAsync[TSource](IQueryable`1 source, Expression`1 predicate)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 12:59:13.130 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Sneha%4012345 - 500 null text/plain; charset=utf-8 114.7926ms
+2024-05-11 13:01:58.790 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 13:01:58.823 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 13:01:58.825 +05:30 [INF] Hosting environment: Development
+2024-05-11 13:01:58.825 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 13:02:02.321 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 13:02:02.793 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 482.1938ms
+2024-05-11 13:02:02.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 13:02:02.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 13:02:02.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.4258ms
+2024-05-11 13:02:02.839 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.7862ms
+2024-05-11 13:02:02.903 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 13:02:03.001 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.5361ms
+2024-05-11 13:02:33.086 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Sneha%40123 - null 0
+2024-05-11 13:02:33.094 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 13:02:33.095 +05:30 [INF] CORS policy execution successful.
+2024-05-11 13:02:33.096 +05:30 [INF] CORS policy execution successful.
+2024-05-11 13:02:33.099 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 13:02:33.116 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 13:02:34.896 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 1775.7682ms
+2024-05-11 13:02:34.898 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 13:02:34.901 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365 responded 500 in 1807.8302 ms
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 13:02:34.978 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 55
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 13:02:34.989 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/56064927-8ef1-44a7-a6b1-47790e58d365?oldPassword=b2bbddeabbceef232628ada1603ba4dda1d29c73d360cfa0a608baa5a70a7152&newPassword=Sneha%40123 - 500 null text/plain; charset=utf-8 1903.3933ms
+2024-05-11 14:12:40.461 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 14:12:40.517 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 14:12:40.520 +05:30 [INF] Hosting environment: Development
+2024-05-11 14:12:40.523 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 14:12:41.823 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 14:12:43.000 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1184.7797ms
+2024-05-11 14:12:43.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 14:12:43.013 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 14:12:43.020 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.6724ms
+2024-05-11 14:12:43.074 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.1679ms
+2024-05-11 14:12:43.165 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 14:12:43.310 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 145.8379ms
+2024-05-11 14:13:51.084 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - application/json 250
+2024-05-11 14:13:51.109 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 14:13:51.113 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:13:51.115 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:13:51.120 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 14:13:51.146 +05:30 [INF] Route matched with {action = "Registration", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Registration(LXP.Common.ViewModels.RegisterUserViewModel) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:13:53.860 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 14:13:53.898 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.Registration (LXP.Api) in 2740.9279ms
+2024-05-11 14:13:53.906 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.Registration (LXP.Api)'
+2024-05-11 14:13:53.910 +05:30 [INF] HTTP POST /lxp/learner/registration responded 200 in 2801.6768 ms
+2024-05-11 14:13:53.912 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/registration - 200 null application/json; charset=utf-8 2827.8337ms
+2024-05-11 14:14:48.493 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Arun%40123 - null 0
+2024-05-11 14:14:48.504 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:14:48.505 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:14:48.506 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:14:48.513 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:14:48.708 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 193.5022ms
+2024-05-11 14:14:48.712 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:14:48.714 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 500 in 210.3337 ms
+System.NotImplementedException: The method or operation is not implemented.
+   at LXP.Core.Services.PasswordHistoryService.SomeHashFunction(String password) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 84
+   at LXP.Core.Services.PasswordHistoryService.HashPassword(String password) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 79
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 57
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 14:14:48.766 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotImplementedException: The method or operation is not implemented.
+   at LXP.Core.Services.PasswordHistoryService.SomeHashFunction(String password) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 84
+   at LXP.Core.Services.PasswordHistoryService.HashPassword(String password) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 79
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 57
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 14:14:48.782 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Arun%40123 - 500 null text/plain; charset=utf-8 288.8141ms
+2024-05-11 14:17:53.193 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 14:17:53.242 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 14:17:53.245 +05:30 [INF] Hosting environment: Development
+2024-05-11 14:17:53.246 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 14:17:55.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 14:17:56.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 911.1066ms
+2024-05-11 14:17:56.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 14:17:56.599 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 14:17:56.606 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.5464ms
+2024-05-11 14:17:56.657 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.9897ms
+2024-05-11 14:17:56.745 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 14:17:56.870 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.3289ms
+2024-05-11 14:18:28.857 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - null 0
+2024-05-11 14:18:28.885 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 14:18:28.887 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:18:28.889 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:18:28.893 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:18:28.918 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:18:31.573 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 2647.9922ms
+2024-05-11 14:18:31.577 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:18:31.581 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 500 in 2697.5539 ms
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 14:18:31.703 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 14:18:31.722 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - 500 null text/plain; charset=utf-8 2866.9604ms
+2024-05-11 14:20:37.647 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 14:20:37.767 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 14:20:37.772 +05:30 [INF] Hosting environment: Development
+2024-05-11 14:20:37.775 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 14:20:39.230 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 14:20:40.592 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1368.9109ms
+2024-05-11 14:20:40.618 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 14:20:40.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 14:20:40.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 41.1529ms
+2024-05-11 14:20:40.748 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.4968ms
+2024-05-11 14:20:40.862 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 14:20:40.994 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.9568ms
+2024-05-11 14:21:02.798 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - null 0
+2024-05-11 14:21:02.832 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 14:21:02.834 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:21:02.836 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:21:02.840 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:21:02.866 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:21:05.728 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 2855.4947ms
+2024-05-11 14:21:05.732 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:21:05.736 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 500 in 2905.2688 ms
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 14:21:05.871 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 14:21:05.894 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - 500 null text/plain; charset=utf-8 3095.7495ms
+2024-05-11 14:21:32.346 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - null 0
+2024-05-11 14:21:32.354 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:21:32.355 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:21:32.356 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:21:32.357 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.Guid, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:21:32.526 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 165.3001ms
+2024-05-11 14:21:32.528 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:21:32.530 +05:30 [ERR] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 500 in 176.2573 ms
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 14:21:32.542 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at MySqlConnector.Core.Row.GetString(Int32 ordinal) in /_/src/MySqlConnector/Core/Row.cs:line 355
+   at MySqlConnector.MySqlDataReader.GetString(Int32 ordinal) in /_/src/MySqlConnector/MySqlDataReader.cs:line 293
+   at lambda_method50(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.PasswordHistoryRepository.GetPasswordHistory(Guid learnerId) in D:\Capstone_Sprint-2_Backend\LXP.Data\Repository\PasswordHistoryRepository.cs:line 26
+   at LXP.Core.Services.PasswordHistoryService.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Core\Services\PasswordHistoryService.cs:line 54
+   at LXP.Api.Controllers.RegistrationController.UpdatePassword(Guid learnerId, String oldPassword, String newPassword) in D:\Capstone_Sprint-2_Backend\LXP.Api\Controllers\RegistrationController.cs:line 390
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 14:21:32.555 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - 500 null text/plain; charset=utf-8 209.0472ms
+2024-05-11 14:28:19.907 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 14:28:19.965 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 14:28:19.968 +05:30 [INF] Hosting environment: Development
+2024-05-11 14:28:19.969 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 14:28:23.952 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 14:28:24.902 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 958.8323ms
+2024-05-11 14:28:24.911 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 14:28:24.911 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 14:28:24.925 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 14.4808ms
+2024-05-11 14:28:24.975 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.9057ms
+2024-05-11 14:28:25.037 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 14:28:25.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.1671ms
+2024-05-11 14:28:52.906 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - null 0
+2024-05-11 14:28:52.930 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 14:28:52.932 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:28:52.934 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:28:52.938 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:28:52.966 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.String, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:28:55.676 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-05-11 14:28:55.683 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 2710.4435ms
+2024-05-11 14:28:55.686 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:28:55.689 +05:30 [INF] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 200 in 2759.9267 ms
+2024-05-11 14:28:55.692 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - 200 null text/plain; charset=utf-8 2788.5728ms
+2024-05-11 14:32:36.659 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - null 0
+2024-05-11 14:32:36.683 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:32:36.684 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:32:36.685 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:32:36.686 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.String, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:32:36.724 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-05-11 14:32:36.726 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 37.1779ms
+2024-05-11 14:32:36.727 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:32:36.728 +05:30 [INF] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 400 in 46.0117 ms
+2024-05-11 14:32:36.730 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Arun123&newPassword=Sneha123 - 400 null text/plain; charset=utf-8 71.6274ms
+2024-05-11 14:40:13.086 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Sneha123&newPassword=Keerrthi123 - null 0
+2024-05-11 14:40:13.096 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:40:13.097 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:40:13.098 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:40:13.099 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.String, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:40:13.154 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-05-11 14:40:13.156 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 55.6786ms
+2024-05-11 14:40:13.158 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:40:13.159 +05:30 [INF] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 200 in 63.0440 ms
+2024-05-11 14:40:13.161 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Sneha123&newPassword=Keerrthi123 - 200 null text/plain; charset=utf-8 75.0845ms
+2024-05-11 14:40:35.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 14:40:35.560 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 31.3513ms
+2024-05-11 14:40:35.584 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 14:40:35.585 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 14:40:35.591 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.2344ms
+2024-05-11 14:40:35.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.1447ms
+2024-05-11 14:40:35.779 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 14:40:35.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.2012ms
+2024-05-11 14:50:06.909 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 14:50:07.071 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 14:50:07.076 +05:30 [INF] Hosting environment: Development
+2024-05-11 14:50:07.079 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 14:50:08.411 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 14:50:09.334 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 933.9576ms
+2024-05-11 14:50:09.344 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 14:50:09.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 14:50:09.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 19.2262ms
+2024-05-11 14:50:09.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.6272ms
+2024-05-11 14:50:09.640 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 14:50:09.780 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.2189ms
+2024-05-11 14:50:38.322 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Keerrthi123&newPassword=Arun123 - null 0
+2024-05-11 14:50:38.343 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 14:50:38.346 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:50:38.348 +05:30 [INF] CORS policy execution successful.
+2024-05-11 14:50:38.353 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:50:38.376 +05:30 [INF] Route matched with {action = "UpdatePassword", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdatePassword(System.String, System.String, System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 14:52:01.455 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-05-11 14:52:01.466 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api) in 83081.6302ms
+2024-05-11 14:52:01.469 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdatePassword (LXP.Api)'
+2024-05-11 14:52:01.473 +05:30 [INF] HTTP PUT /lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818 responded 200 in 83131.1855 ms
+2024-05-11 14:52:01.479 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updatePassword/3c56b8dd-92e5-45a2-a274-586bbfcd1818?oldPassword=Keerrthi123&newPassword=Arun123 - 200 null text/plain; charset=utf-8 83156.9006ms
+2024-05-11 16:48:31.182 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 16:48:31.285 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 16:48:31.289 +05:30 [INF] Hosting environment: Development
+2024-05-11 16:48:31.291 +05:30 [INF] Content root path: D:\Capstone_Sprint-2_Backend\LXP.Api
+2024-05-11 16:48:32.540 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 16:48:33.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1033.4771ms
+2024-05-11 16:48:33.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 16:48:33.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 16:48:33.578 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.2027ms
+2024-05-11 16:48:33.623 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.0143ms
+2024-05-11 16:48:33.698 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 16:48:33.840 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 142.0972ms
+2024-05-11 16:51:50.344 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updateProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 - multipart/form-data; boundary=----WebKitFormBoundaryExjSywlz7bQQ7pfS 70661
+2024-05-11 16:51:50.370 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 16:51:50.372 +05:30 [INF] CORS policy execution successful.
+2024-05-11 16:51:50.373 +05:30 [INF] CORS policy execution successful.
+2024-05-11 16:51:50.378 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdateProfile (LXP.Api)'
+2024-05-11 16:51:50.406 +05:30 [INF] Route matched with {action = "UpdateProfile", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProfile(System.String, LXP.Common.ViewModels.UpdateProfileViewModel, Microsoft.AspNetCore.Http.IFormFile) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 16:51:54.609 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:51:54.631 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdateProfile (LXP.Api) in 4217.5779ms
+2024-05-11 16:51:54.635 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdateProfile (LXP.Api)'
+2024-05-11 16:51:54.639 +05:30 [INF] HTTP PUT /lxp/learner/updateProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 responded 200 in 4271.4424 ms
+2024-05-11 16:51:54.645 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updateProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 - 200 null application/json; charset=utf-8 4301.3851ms
+2024-05-11 16:54:48.848 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/learner/updateProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 - multipart/form-data; boundary=----WebKitFormBoundaryAjNBUEe84MxHDiLp 64920
+2024-05-11 16:54:48.860 +05:30 [INF] CORS policy execution successful.
+2024-05-11 16:54:48.861 +05:30 [INF] CORS policy execution successful.
+2024-05-11 16:54:48.862 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.UpdateProfile (LXP.Api)'
+2024-05-11 16:54:48.864 +05:30 [INF] Route matched with {action = "UpdateProfile", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateProfile(System.String, LXP.Common.ViewModels.UpdateProfileViewModel, Microsoft.AspNetCore.Http.IFormFile) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 16:54:48.919 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:54:48.920 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.UpdateProfile (LXP.Api) in 54.2035ms
+2024-05-11 16:54:48.922 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.UpdateProfile (LXP.Api)'
+2024-05-11 16:54:48.923 +05:30 [INF] HTTP PUT /lxp/learner/updateProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 responded 200 in 63.8724 ms
+2024-05-11 16:54:48.925 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/learner/updateProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 - 200 null application/json; charset=utf-8 77.0501ms
+2024-05-11 16:55:35.948 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/view/learner/379cfafd-7323-4d5c-8174-3a48a84e3a02 - null null
+2024-05-11 16:55:35.966 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.GetLearnerById (LXP.Api)'
+2024-05-11 16:55:35.980 +05:30 [INF] Route matched with {action = "GetLearnerById", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLearnerById(System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 16:55:36.005 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:55:36.009 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.GetLearnerById (LXP.Api) in 24.8336ms
+2024-05-11 16:55:36.011 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.GetLearnerById (LXP.Api)'
+2024-05-11 16:55:36.013 +05:30 [INF] HTTP GET /lxp/view/learner/379cfafd-7323-4d5c-8174-3a48a84e3a02 responded 200 in 46.8133 ms
+2024-05-11 16:55:36.015 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/view/learner/379cfafd-7323-4d5c-8174-3a48a84e3a02 - 200 null application/json; charset=utf-8 67.7314ms
+2024-05-11 16:55:58.069 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/view/learnerProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 - null null
+2024-05-11 16:55:58.087 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.RegistrationController.GetLearnerProfileById (LXP.Api)'
+2024-05-11 16:55:58.096 +05:30 [INF] Route matched with {action = "GetLearnerProfileById", controller = "Registration"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetLearnerProfileById(System.String) on controller LXP.Api.Controllers.RegistrationController (LXP.Api).
+2024-05-11 16:55:58.104 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:55:58.165 +05:30 [INF] Executed action LXP.Api.Controllers.RegistrationController.GetLearnerProfileById (LXP.Api) in 64.9935ms
+2024-05-11 16:55:58.168 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.RegistrationController.GetLearnerProfileById (LXP.Api)'
+2024-05-11 16:55:58.170 +05:30 [INF] HTTP GET /lxp/view/learnerProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 responded 200 in 83.7047 ms
+2024-05-11 16:55:58.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/view/learnerProfile/379cfafd-7323-4d5c-8174-3a48a84e3a02 - 200 null application/json; charset=utf-8 102.9286ms
