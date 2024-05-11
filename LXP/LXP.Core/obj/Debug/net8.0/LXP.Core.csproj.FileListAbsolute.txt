@@ -77,3 +77,23 @@ D:\FinalArchitecture2\LXP\LXP.Core\obj\Debug\net8.0\refint\LXP.Core.dll
 D:\FinalArchitecture2\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.pdb
 D:\FinalArchitecture2\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.genruntimeconfig.cache
 D:\FinalArchitecture2\LXP\LXP.Core\obj\Debug\net8.0\ref\LXP.Core.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\refint\LXP.Core.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.pdb
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.csproj.AssemblyReference.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.AssemblyInfoInputs.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.AssemblyInfo.cs
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.csproj.CoreCompileInputs.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.sourcelink.json
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Core.deps.json
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Core.runtimeconfig.json
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Core.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Core.pdb
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Data.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Data.pdb
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.csproj.CopyComplete
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\LXP.Core.genruntimeconfig.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Core\obj\Debug\net8.0\ref\LXP.Core.dll

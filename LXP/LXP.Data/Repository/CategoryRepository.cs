@@ -10,7 +10,7 @@ using LXP.Data.IRepository;
 
 namespace LXP.Data.Repository
 {
-    public class CategoryRepository:ICategoryRepository
+    public class CategoryRepository : ICategoryRepository
     {
         private readonly LXPDbContext _lXPDbContext;
         public CategoryRepository(LXPDbContext lXPDbContext)
@@ -30,7 +30,10 @@ namespace LXP.Data.Repository
         {
             return await _lXPDbContext.CourseCategories.AnyAsync(category => category.Category == Category);
         }
+        public CourseCategory GetCategoryByCategoryId(Guid categoryId)
+        {
+            return _lXPDbContext.CourseCategories.Find(categoryId);
+        }
+
     }
 }
-
-

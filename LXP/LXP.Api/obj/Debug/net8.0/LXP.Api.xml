@@ -19,6 +19,11 @@
             <response code="422">Sourse is already exists</response>
             <response code="500">Internal server Error</response>
         </member>
+        <member name="M:LXP.Api.Controllers.CourseController.GetAllCourseDetails">
+            <summary>
+            Fetch all the course
+            </summary>
+        </member>
         <member name="M:LXP.Api.Controllers.EmailController.GenerateOTP(System.String)">
             <summary>
             Generating email to the repected mail they entered

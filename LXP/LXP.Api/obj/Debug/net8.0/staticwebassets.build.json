@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "fvYonLZ+bPkPumLnb+sZ5hSQnpuu5m5tLdPPfFDsmPY=",
+  "Hash": "Xnsl5aea4tf7Wj34lEUg8rAJymlstiNxc5R8VIX7VWg=",
   "Source": "LXP.Api",
   "BasePath": "_content/LXP.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "LXP.Api\\wwwroot",
+      "Source": "LXP.Api",
+      "ContentRoot": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\CourseThumbnailImages\\62f1a199-869d-4b7a-b5d8-86cbe7aff26b_java.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/62f1a199-869d-4b7a-b5d8-86cbe7aff26b_java.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\62f1a199-869d-4b7a-b5d8-86cbe7aff26b_java.png"
+    },
+    {
+      "Identity": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\CourseThumbnailImages\\6eb8ac5f-6d34-416d-9433-6faaecf6d4a0_HTML.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/6eb8ac5f-6d34-416d-9433-6faaecf6d4a0_HTML.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\6eb8ac5f-6d34-416d-9433-6faaecf6d4a0_HTML.png"
+    }
+  ]
 }

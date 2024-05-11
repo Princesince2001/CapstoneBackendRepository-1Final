@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\CourseThumbnailImages\\62f1a199-869d-4b7a-b5d8-86cbe7aff26b_java.png",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\62f1a199-869d-4b7a-b5d8-86cbe7aff26b_java.png"
+    },
+    {
+      "Id": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Api\\wwwroot\\CourseThumbnailImages\\6eb8ac5f-6d34-416d-9433-6faaecf6d4a0_HTML.png",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\6eb8ac5f-6d34-416d-9433-6faaecf6d4a0_HTML.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LXP.Api.props",
+      "PackagePath": "build\\LXP.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LXP.Api.props",
+      "PackagePath": "buildMultiTargeting\\LXP.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LXP.Api.props",
+      "PackagePath": "buildTransitive\\LXP.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -14,6 +14,7 @@ namespace LXP.Data.IRepository
         Task<List<CourseCategory>> GetAllCategory();
 
         Task<bool> AnyCategoryByCategoryName(string Category);
+        CourseCategory GetCategoryByCategoryId(Guid categoryId);
 
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FinalArchitecture2\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj": {}
+    "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj": {}
   },
   "projects": {
-    "D:\\FinalArchitecture2\\LXP\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FinalArchitecture2\\LXP\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\keerthivasan.k\\.nuget\\packages\\",
-        "outputPath": "D:\\FinalArchitecture2\\LXP\\LXP.Common\\obj\\",
+        "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\priyadharshini.mu\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\keerthivasan.k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\priyadharshini.mu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,6 +44,24 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -64,20 +82,20 @@
         }
       }
     },
-    "D:\\FinalArchitecture2\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj": {
+    "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FinalArchitecture2\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+        "projectUniqueName": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
         "projectName": "LXP.Core.Tests",
-        "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
-        "packagesPath": "C:\\Users\\keerthivasan.k\\.nuget\\packages\\",
-        "outputPath": "D:\\FinalArchitecture2\\LXP\\LXP.Core.Tests\\obj\\",
+        "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+        "packagesPath": "C:\\Users\\priyadharshini.mu\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\keerthivasan.k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\priyadharshini.mu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -93,8 +111,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FinalArchitecture2\\LXP\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Core\\LXP.Core.csproj"
+              "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -109,6 +127,22 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.6.0, )"
@@ -150,20 +184,20 @@
         }
       }
     },
-    "D:\\FinalArchitecture2\\LXP\\LXP.Core\\LXP.Core.csproj": {
+    "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FinalArchitecture2\\LXP\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Core\\LXP.Core.csproj",
-        "packagesPath": "C:\\Users\\keerthivasan.k\\.nuget\\packages\\",
-        "outputPath": "D:\\FinalArchitecture2\\LXP\\LXP.Core\\obj\\",
+        "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core\\LXP.Core.csproj",
+        "packagesPath": "C:\\Users\\priyadharshini.mu\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\keerthivasan.k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\priyadharshini.mu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -179,8 +213,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FinalArchitecture2\\LXP\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Data\\LXP.Data.csproj"
+              "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -198,6 +232,22 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -220,20 +270,20 @@
         }
       }
     },
-    "D:\\FinalArchitecture2\\LXP\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FinalArchitecture2\\LXP\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\keerthivasan.k\\.nuget\\packages\\",
-        "outputPath": "D:\\FinalArchitecture2\\LXP\\LXP.Data\\obj\\",
+        "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\priyadharshini.mu\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\keerthivasan.k\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\priyadharshini.mu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -249,8 +299,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FinalArchitecture2\\LXP\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\FinalArchitecture2\\LXP\\LXP.Common\\LXP.Common.csproj"
+              "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\LXP capstone project\\CapstoneBackendSprint-1Final\\LXP\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }
@@ -269,6 +319,18 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.4, )"
@@ -282,6 +344,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
@@ -304,6 +370,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

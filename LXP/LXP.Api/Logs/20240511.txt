@@ -1,0 +1,211 @@
+2024-05-11 15:12:31.968 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 15:12:32.006 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 15:12:32.008 +05:30 [INF] Hosting environment: Development
+2024-05-11 15:12:32.009 +05:30 [INF] Content root path: D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Api
+2024-05-11 15:12:36.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 15:12:37.036 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 506.7505ms
+2024-05-11 15:12:37.045 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 15:12:37.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.2985ms
+2024-05-11 15:12:37.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 15:12:37.142 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.5849ms
+2024-05-11 15:12:37.195 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 15:12:37.316 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 121.1808ms
+2024-05-11 15:12:49.259 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/view/course - null null
+2024-05-11 15:12:49.267 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 15:12:49.270 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api)'
+2024-05-11 15:12:49.283 +05:30 [INF] Route matched with {action = "GetAllCourseDetails", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseDetails() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-11 15:12:50.642 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 15:12:50.659 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api) in 1372.4832ms
+2024-05-11 15:12:50.661 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api)'
+2024-05-11 15:12:50.663 +05:30 [INF] HTTP GET /lxp/view/course responded 200 in 1397.2534 ms
+2024-05-11 15:12:50.665 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/view/course - 200 null application/json; charset=utf-8 1405.6226ms
+2024-05-11 15:23:36.576 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 15:23:36.607 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 15:23:36.608 +05:30 [INF] Hosting environment: Development
+2024-05-11 15:23:36.609 +05:30 [INF] Content root path: D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Api
+2024-05-11 15:23:37.702 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 15:23:38.282 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 591.68ms
+2024-05-11 15:23:38.289 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 15:23:38.294 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.0167ms
+2024-05-11 15:23:38.298 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 15:23:38.339 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.8673ms
+2024-05-11 15:23:38.398 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 15:23:38.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.1206ms
+2024-05-11 15:25:22.507 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 15:25:22.513 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 15:25:22.516 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 15:25:22.536 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 15:25:22.543 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 1.882ms
+2024-05-11 15:25:22.545 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 15:25:22.547 +05:30 [ERR] HTTP POST /lxp/enroll responded 500 in 34.1811 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IEnrollmentService' while attempting to activate 'LXP.Api.Controllers.EnrollmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-11 15:25:22.576 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.IEnrollmentService' while attempting to activate 'LXP.Api.Controllers.EnrollmentController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-11 15:25:22.585 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 500 null text/plain; charset=utf-8 82.7468ms
+2024-05-11 15:48:02.782 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 15:48:02.819 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 15:48:02.822 +05:30 [INF] Hosting environment: Development
+2024-05-11 15:48:02.823 +05:30 [INF] Content root path: D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Api
+2024-05-11 15:48:06.885 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 15:48:07.484 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 611.2383ms
+2024-05-11 15:48:07.491 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 15:48:07.498 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.9944ms
+2024-05-11 15:48:07.504 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 15:48:07.542 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5002ms
+2024-05-11 15:48:07.607 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 15:48:07.721 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.0111ms
+2024-05-11 15:58:06.839 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 15:58:06.879 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 15:58:06.881 +05:30 [INF] Hosting environment: Development
+2024-05-11 15:58:06.882 +05:30 [INF] Content root path: D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Api
+2024-05-11 15:58:08.631 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 15:58:09.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 623.5744ms
+2024-05-11 15:58:09.261 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 15:58:09.269 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 15:58:09.269 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.9415ms
+2024-05-11 15:58:09.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 30.8239ms
+2024-05-11 15:58:09.373 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 15:58:09.481 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.2157ms
+2024-05-11 16:00:17.450 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:00:17.459 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 16:00:17.462 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:00:17.481 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:00:19.046 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:00:19.054 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 1567.2037ms
+2024-05-11 16:00:19.057 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:00:19.059 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 1600.9468 ms
+2024-05-11 16:00:19.061 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 1610.547ms
+2024-05-11 16:01:42.370 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:01:42.405 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:01:42.406 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:01:42.422 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:01:42.424 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 15.1997ms
+2024-05-11 16:01:42.425 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:01:42.426 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 21.4643 ms
+2024-05-11 16:01:42.428 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 57.7363ms
+2024-05-11 16:01:50.805 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 16:01:50.828 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 23.484ms
+2024-05-11 16:01:50.844 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 16:01:50.844 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 16:01:50.858 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.3804ms
+2024-05-11 16:01:50.863 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.4763ms
+2024-05-11 16:01:50.964 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 16:01:50.982 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.8786ms
+2024-05-11 16:02:18.213 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:02:18.222 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:02:18.223 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:02:18.232 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:02:18.233 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 7.0079ms
+2024-05-11 16:02:18.235 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:02:18.236 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 14.4857 ms
+2024-05-11 16:02:18.238 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 24.6548ms
+2024-05-11 16:02:44.225 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:02:44.233 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:02:44.234 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:02:44.238 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:02:44.239 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 2.7803ms
+2024-05-11 16:02:44.240 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:02:44.241 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 8.7278 ms
+2024-05-11 16:02:44.243 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 18.1739ms
+2024-05-11 16:07:15.806 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 16:07:15.844 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 16:07:15.847 +05:30 [INF] Hosting environment: Development
+2024-05-11 16:07:15.848 +05:30 [INF] Content root path: D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Api
+2024-05-11 16:07:20.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 16:07:20.637 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 641.1022ms
+2024-05-11 16:07:20.645 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 16:07:20.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.8497ms
+2024-05-11 16:07:20.657 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 16:07:20.699 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.1208ms
+2024-05-11 16:07:20.770 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 16:07:20.890 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.111ms
+2024-05-11 16:08:25.751 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:08:25.765 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 16:08:25.771 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:08:25.799 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:08:29.233 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:08:29.241 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 3436.8194ms
+2024-05-11 16:08:29.244 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:08:29.247 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 3485.5143 ms
+2024-05-11 16:08:29.250 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 3498.5458ms
+2024-05-11 16:09:07.309 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:09:07.320 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:09:07.322 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:09:07.334 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:09:07.336 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 11.8281ms
+2024-05-11 16:09:07.337 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:09:07.338 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 18.5638 ms
+2024-05-11 16:09:07.340 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 30.9158ms
+2024-05-11 16:12:42.189 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-11 16:12:42.228 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-11 16:12:42.230 +05:30 [INF] Hosting environment: Development
+2024-05-11 16:12:42.231 +05:30 [INF] Content root path: D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Api
+2024-05-11 16:12:46.552 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 16:12:47.130 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 589.2299ms
+2024-05-11 16:12:47.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 16:12:47.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.914ms
+2024-05-11 16:12:47.149 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 16:12:47.183 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8397ms
+2024-05-11 16:12:47.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 16:12:47.360 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.0286ms
+2024-05-11 16:13:50.772 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:13:50.781 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-11 16:13:50.784 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:13:50.803 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:13:52.834 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:13:52.841 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 2032.4209ms
+2024-05-11 16:13:52.842 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:13:52.844 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 2064.9954 ms
+2024-05-11 16:13:52.846 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 2077.9835ms
+2024-05-11 16:14:52.033 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-11 16:14:52.057 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 24.4366ms
+2024-05-11 16:14:52.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-11 16:14:52.069 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-11 16:14:52.071 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.2158ms
+2024-05-11 16:14:52.099 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 29.8833ms
+2024-05-11 16:14:52.196 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-11 16:14:52.212 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.6853ms
+2024-05-11 16:15:38.607 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/enroll - application/json 214
+2024-05-11 16:15:38.614 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:15:38.616 +05:30 [INF] Route matched with {action = "Addenroll", controller = "Enrollment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Addenroll(LXP.Common.ViewModels.EnrollmentViewModel) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-05-11 16:15:38.646 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:15:38.651 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api) in 33.7041ms
+2024-05-11 16:15:38.653 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.Addenroll (LXP.Api)'
+2024-05-11 16:15:38.654 +05:30 [INF] HTTP POST /lxp/enroll responded 200 in 39.3876 ms
+2024-05-11 16:15:38.655 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/enroll - 200 null application/json; charset=utf-8 48.7839ms
+2024-05-11 16:16:21.089 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/view/course - null null
+2024-05-11 16:16:21.098 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api)'
+2024-05-11 16:16:21.102 +05:30 [INF] Route matched with {action = "GetAllCourseDetails", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseDetails() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-11 16:16:21.223 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-11 16:16:21.237 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api) in 132.052ms
+2024-05-11 16:16:21.240 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api)'
+2024-05-11 16:16:21.242 +05:30 [INF] HTTP GET /lxp/view/course responded 200 in 143.5228 ms
+2024-05-11 16:16:21.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/view/course - 200 null application/json; charset=utf-8 155.0575ms

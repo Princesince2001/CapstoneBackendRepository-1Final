@@ -44,3 +44,16 @@ D:\FinalArchitecture2\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
 D:\FinalArchitecture2\LXP\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\FinalArchitecture2\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\FinalArchitecture2\LXP\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\LXP capstone project\CapstoneBackendSprint-1Final\LXP\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
